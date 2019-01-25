@@ -1,0 +1,39 @@
+{
+    "name": "ap-utils-image",
+    "displayName": "AP Utils Image",
+    "description": "AP Utils - insert image",
+    "version": "0.0.1",
+    "publisher": "alexaandru",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.apImage"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.apImage",
+            "title": "AP Utils Image"
+        }]
+    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexaandru/ap-utils-image"
+	},
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
